@@ -20,6 +20,7 @@ body {
   padding-top: 10px;
   padding-left: 5em;
   padding-bottom: 100px;
+  clear: right;
 }
 
 .navigation {
