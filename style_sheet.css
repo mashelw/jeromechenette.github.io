@@ -2,10 +2,12 @@
 
 body {
   background-color: black;
+  /*
   background: url(imgs/index_background.jpg)no-repeat center center fixed;
   background-size: cover;
   display: inline;
   margin: 0 auto;
+  */
 }
 
 #masthead {
