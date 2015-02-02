@@ -56,7 +56,7 @@ a:hover {
 #body_content{
   color: white;
   position: relative;
-  height: 450px;
+  max-height: 450px;
   text-align: center;
   width: 100%;
   font-family: sans-serif;
@@ -89,7 +89,7 @@ a:hover {
   clear: both;
   text-align: center;
   width: 100%;
-  position: relative;
+  position: absolute;
   padding-bottom: 1px;
   padding-top: 20px;
   bottom:0px;
