@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Made Ghost | Object-Oriented Programming Concept:</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here_new.css">
+  </head>
+<body>
+
+
+  <div id="masthead">
+    <div class="logo">
+      <a href="#">
+        <img src="imgs/homemadeghost_logo_wide.png" alt="HomeMadeGhostLogo" height="60px" width="345px">
+      </a>
+    </div>
+    <div class="navigation">
+    <a href="../about.html">About</a> <a href="../portfolio.html">Portfolio</a> <a href="../blog.html">Blog</a> <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+
+<div class="post"
+  <h2>Coding From An Empty Cup</h2>
+  <h1>Object-Oriented Programming Concept:</h1>
+  <h4>February 20, 2015</h4>
+<p>I want to briefly look at some of the  Object-Oriented Programming Concepts that DBC has suggested as review and then look at one of these concepts more in depth.
+<p><b>OO vs. Functional Programming</b></p>
+<p>Notes:
+  <ul>
+    <li>"Functional programming – treats computation as the evaluation of mathematical functions and avoids state and mutable data."</li>
+    <li>"Object-oriented programming (OOP) – organizes programs as objects: data structures consisting of datafields and methods together with their interactions."</li>
+  </ul></p>
+
+
+
+<p><b>Variable Scope</b></p>
+<p>Notes: "Scope defines where in a program a variable is accessible. Ruby has four types of variable scope, local, global, instance and class. In addition, Ruby has one constant type. Each variable type is declared by using a special character at the start of the variable name as outlined in the following table."</p>
+
+<table>
+  <tr>
+    <th>Name Begins With</th>
+    <th>Variable Scope</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>$</td>
+    <td>A global variable</td>
+    <td>Notes: "Global variables are valid everywhere in the script. They start with a $ sigil in Ruby. The use of global variables is discouraged. Global variables easily lead to many programming errors. Global variables should be used only when there is a reason to do so. Instead of global variables, programmers are advised to use local variables whenever possible."</td>
+  </tr>
+  <tr>
+    <td>@</td>
+    <td>An instance variable</td>
+    <td>Notes: "Instance variables are variables that belong to a particular object instance. Each object has its own object variables. Instance variables start with a @ sigil. Class variables belong to a specific class. All objects created from a particular class share class variables. Class variables start with @@ characters."</td>
+  </tr>
+  <tr>
+    <td>[a-z] or _</td>
+    <td>A local variable</td>
+    <td>Notes: "Local variables are variables that are valid within a local area of a Ruby source code. This area is also referred to as local scope. Local variables exist within the definition of a Ruby module, method, class."</td>
+  </tr>
+  <tr>
+    <td>[A-Z]</td>
+    <td>A constant</td>
+    <td>Notes: "Constants begin with an uppercase letter. Constants defined within a class or module can be accessed from within that class or module, and those defined outside a class or module can be accessed globally.
+    Constants may not be defined within methods. Referencing an uninitialized constant produces an error. Making an assignment to a constant that is already initialized produces a warning."</td>
+  </tr>
+  <tr>
+    <td>@@</td>
+    <td>A class variable</td>
+    <td>Notes: "A class variable is a variable that is shared amongst all instances of a class. This means that only one variable value exists for all objects instantiated from this class. This means that if one object instance changes the value of the variable, that new value will essentially change for all other object instances.
+Another way of thinking of thinking of class variables is as global variables within the context of a single class."</td>
+  </tr>
+</table>
+
+<p><b>Blocs, Procs, and Lambdas</p></b>
+<p>Notes:"Blocs: code blocks passed into methods are anonymous objects, created on the spot."</p>
+<p>Notes:"Procs: Procs are objects;  block created with Proc.new behaves like it’s a part of the calling method when return is used within it, and returns from both the block itself as well as the calling method."</p>
+<p>Notes:"Lambdas: A block created with lambda behaves like a method when you use return and simply exits the block, handing control back to the calling method."</p>
+
+<p><b>Class Methods</p></b>
+<p>Notes: "Class method: An object made up of behavior and data."</p>
+
+<p><b>Classes vs Modules</b></p>
+<p>Notes: "Classes are about objects; modules are about functions."</p>
+
+<p><b>Inheritance vs Composition</b></p>
+<p>Notes:"Inheritance is used to indicate that one class will get most or all of its features from a parent class."</p>
+<p>Notes:"Composition - calling functions in a module.</p>
+
+<p><b>In Depth: Inheritance vs Composition</b></p>
+<p><b>Inheritance</b></p>
+<p>"Inheritance is used to indicate that one class will get most or all of its features from a parent class". What this is saying is that when you create a class and make another class its parent then the child class will inherit all of the behaviors of the parent class. In my reading on the subject it appears that this can be a relationship that has great rewards, but one that comes with great risk. The complications that arise when calling on additional behaviors from parent classes can become complicated and create unforeseen outcomes. </p>
+<p>Notes: From http://learnrubythehardway.org/</p>
+<ol>
+  <li>Actions on the child imply an action on the parent.</li>
+  <li>Actions on the child override the action on the parent.</li>
+  <li>Actions on the child alter the action on the parent.</li>
+</ol>
+<p>This inheritance of behavior from the parent class takes place even if the child class does not have that behavior explicitly stated; this behavior can be overridden if the method -- with the same method name -- is repeated and either given a different behavior or no behavior at all.</p>
+<p>The Inherited behavior can be altered by calling on Ruby's built-in function named super()) to alter the expression of the parent class behavior and stating when you want that behavior altered. The use of Ruby's built-in function named super() is commonly used in the initialized method which acts similarly to simply placing it within a corresponding method: "setting some variables in the initialize before having the Parent initialize with its Parent.initialize."</p>
+<p><b>Composition</b></p>
+<p>Rather than rely on implicit inheritance utilizing the full inheritance from a parent class and formulating a child <==> Parent relationship you can utilize Composition; calling functions in a module.</p>
+<p>Essentially you are calling out which methods you want to take on from another class explicitly rather than in bulk. (You pick what to use rather than what not to use).
+
+  <p>FUN FUN FUN</p>
+
+
+
+
+
+
+</div>
+<div id="footer">
+  <div class="social_icon">
+      <a href="#"><img src="imgs/Social_Icon/Twitter1_SocialIcons_x16.png" alt="twitter"/></a>
+      <a href="#"><img src="imgs/Social_Icon/Facebook_SocialIcons_x16.png" alt="facebook" /></a>
+      <a href="#"><img src="imgs/Social_Icon/Github_SocialIcons_x16.png" alt="github" /></a>
+      <a href="#"><img src="imgs/Social_Icon/LinkedIn_SocialIcons_x16.png" alt="linkedIn" /></a>
+      <a href="#"><img src="imgs/Social_Icon/Quora_SocialIcons_x16.png" alt="quora" /></a>
+    </div>
+    <p><span class ="smaller_case">HOMEMADE GHOST INC. | DESIGN | DEV | SAN FRANCISCO, CA</p>
+</div>
+
+
+
+
+
+</body>
+</html>
