@@ -1,0 +1,384 @@
+<html>
+<head>
+  <title>Home Made Ghost | JavaScript Vs. Ruby</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here_new.css">
+  </head>
+<body>
+
+
+  <div id="masthead">
+    <div class="logo">
+      <a href="#">
+        <img src="imgs/homemadeghost_logo_wide.png" alt="HomeMadeGhostLogo" height="60px" width="345px">
+      </a>
+    </div>
+    <div class="navigation">
+    <a href="../about.html">About</a> <a href="../portfolio.html">Portfolio</a> <a href="../blog.html">Blog</a> <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+
+<div class="post"
+  <h2>Coding From An Empty Cup</h2>
+  <h1>JavaScript Vs. Ruby</h1>
+  <h4>February 28, 2015</h4>
+
+
+    <p><b>JavaScript Vs. Ruby</b><p>
+
+<p><b>Ruby Hashes vs. JavaScript Objects:</b></p>
+<p>Javascript objects look a whole like like ruby hashes - syntactically similar they operate slightly different.</p>
+
+<p>"JavaScript has no built in data type to parallel Ruby's Hash, although we can use object literals in JavaScript to achieve a similar functionality."</p>
+
+<p>Ruby:
+  </br>animal= { cat: "woof woof" } #ruby hash
+  </br>puts animal[:cat] #prints "Woof Woof"</p>
+
+  <p>Javascript:
+  </br>var animal = { cat: "woof woof" } // js object
+  </br>console.log(obj["cat"]) //prints "Woof Woof"</p>
+
+<p><b>Ruby classes vs. JavaScript constructor functions:</b></p>
+<p>In ruby we initialize a new class with 'Class.New'. In javascript we initialize the object similarly with the 'new' operator. With this operator we creat new objects, set the propertys to the constructor function, and returns a new object.</p>
+
+
+<p><b>Ruby documentation vs. JavaScript documentation:</b></p>
+<p>http://ruby-doc.org/ vs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</p>
+
+
+<p>Notes:</p>
+
+<p><b>Similarities</p></b>
+<ul>
+<li>Numbers and strings are the two main basic data types in JavaScript, as they are in Ruby.</li>
+<li>JavaScript also supports the modulus operator % which returns the remainder of a division operation.</li>
+
+<li>A string is a collection of characters, just like in Ruby. These can be letters, symbols or numbers. Here are some strings in JavaScript:</li>
+
+
+
+<li>Just like Ruby, there are special characters in JavaScript that can be used in strings by using the escape character or backslash \.</li>
+
+
+
+<li>As in Ruby, a variable is assigned an initial value when it is created by using the assignment operator = which assigns the value on the right of the expression into the variable on the left.</li>
+
+
+
+<li>The console.log() method is somewhat analogous to Ruby's puts, and prompt()</li>
+
+
+
+<li>Combined Assignment Operators
+
+</br>num *= 4;
+
+</br>result += 1;</li>
+
+
+
+<li>JavaScript, like ruby, does let us write arithmetic operations in a familiar way, without having to explicitly write out the method calls as .methodName(). Just like in Ruby, the standard operations are also methods:
+
+</br>5 + 7;
+
+</br>3 * 2;
+
+</br>10 / 5;
+
+
+
+</br>... is the same as ...
+
+</br>5.+(7);
+
+</br>3.*(2);
+
+</br>10./(5);</li>
+
+
+
+<li>Type each line above into the browser console and verify that true or false is returned. These operators should look familiar to the ones you've used in Ruby, with one difference: the === to determine equality. The equality operator is THREE = signs, not two. JavaScript does provide a == comparison operator as well, but it performs type conversion before comparing and thus is not testing for true equality. As a rule of thumb, always use the === operator in JavaScript unless you know that you want ==.</li>
+
+
+
+<li>In addition to the comparison operators, we can use logical operators to combine together conditional statements to create more complex conditional statements. The logical operators are AND represented as &&, OR represented as ||and NOT represented by !. The && and || operators combine together two conditional statements and return a new conditional statement that evaluates to true or false based on the originals.</li>
+
+
+
+<li>The basic branching structure in JavaScript, as in Ruby, is the if branch.</li>
+
+
+
+<li>JavaScript implements join() and split() in much the same way as Ruby.</li>
+
+
+
+
+
+<li>String has the inverse method, String.split(),</li>
+
+
+
+
+
+<li>JavaScript implements push()and pop() in the same way as Ruby, although it doesn't provide the << shovel operator.</li>
+
+
+
+
+
+<li>Array.unshift() and Array.shift() behave like Array.push() and Array.pop(), respectively, except they add and remove elements from the beginning of an array rather than its end. Same behavior in JavaScript as in Ruby.</li>
+
+
+
+<li>Like Strings, you can concatenate Arrays in JavaScript using the concat() method.</li>
+
+</ul>
+
+<p><b>Differences</b></p>
+
+
+
+<li>Unlike Ruby, which differentiates between integers and floating point numbers, JavaScript only defines the number data type. In other words, all numbers in JavaScript are floating-point, even if they are not written with a decimal.</li>
+
+
+
+<li>Some of the common methods that you may have used in Ruby already are abs(), floor(), sqrt(), ceil() andpow(). Remember, these are methods of the Math object, not Number. So you have to call them accordingly.</li>
+
+
+
+<li>You will notice that none of the string methods in JavaScript are destructive - i.e. they will never modify the object they are called on, but will always return a new object instead.In Ruby, there are destructive string methods likecapitalize! that will modify the source object. Ruby uses the ! bang symbol to notify us of these properties. In JavaScript, there is no such convention for desctructive methods.</li>
+
+
+
+<li>In JavaScript, unlike Ruby, we use the varkeyword to prefix variable definition.
+
+</br>var num = 5;
+
+</br>var name = "Josh";
+
+</br>var programmingLanguage = "JavaScript”;
+
+</br>If you do not prefix a variable definition with var, then JavaScript will define the variable for you in the global scope.This is almost always a Bad Idea.
+
+</br>The JavaScript convention is to write variables and functions in mixedCase (as opposed to CamelCase or snake_case).
+
+</br>JavaScript, being a browser-focused language, does not have the same built-in console functionality as Ruby. In other words, we can't use methods like puts and gets to create interactive shell scripts.</li>
+
+
+
+
+
+<li>We know that methods in Ruby can take arguments as input and produce output. The same is true in JavaScript. The output of a function is also called its return value.</li>
+
+
+
+<li>As in Ruby, there are several levels of scope in JavaScript, and parameters are defined as having local scope.</li>
+
+
+
+<li>Combined Assignment Operators
+
+</br>num *= 4;
+
+</br>result += 1;
+
+</br>JavaScript, unlike Ruby, makes a clear distinction between functions and methods.
+
+</br>The best definition of a function is "a chunk of code that does stuff". If that's not good enough for you, then maybe you'd prefer the definition from MDN:
+
+</br>Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function can return a value. Link to source</li>
+
+
+
+<li>What is a Method?
+
+</br>We use the word method to refer to a function that is defined within the context of an object. For example,toUpperCase() is a method defined by the String object. It will only work when called on a string object.
+
+</br>In Ruby, methods can be invoked just by calling their name and parameters (either enclosed in parentheses or not), e.g.puts('Hello world!'). Invoking a function in JavaScript is similar, except that the parentheses are required even if the function does not take any parameters.</li>
+
+
+
+<li>In JavaScript, there is no implicit return. Returning a value from a function requires using the return keyword explicitly.</li>
+
+
+
+<li>Note that we still have to affix the parens () even if the method is called without any arguments. Without the parens, JavaScript interprets your method as a property instead.</li>
+
+
+
+
+
+<li>Method Chaining
+
+</br>if we try to do this in two separate statements it doesn't work because String methods in JavaScript are non-destructive.
+
+</br>var myString = "i like programming";
+
+</br>myString.concat(" and sushi.");
+
+</br>myString.toUpperCase();
+
+</br>We can get around this by assigning another variable:
+
+</br>var myString = "i like programming";
+
+</br>var newString = myString.concat(" and sushi.");
+
+</br>newString.toUpperCase();
+
+</br>var myString = "i like programming";
+
+</br>myString.concat(" and sushi.").toUpperCase();</li>
+
+
+
+<li>Ruby is famous for its readable code. JavaScript, not as much. While Ruby allows for all sorts of "syntactic sugar", JavaScript is usually a bit stricter about requiring statements to be written out with precise formatting: semicolons at the ends of statements, parens for holding arguments and invoking functions, etc.</li>
+
+
+
+<li>JavaScript, like Ruby, has a concept of truthy and falsey values. It allows us to convert objects to a boolean value to be used in a conditional, though it uses some slightly different rules.</li>
+
+
+
+<li>JavaScript does not have an unless statement.
+
+</br>Also, JavaScript does not allow you to use if statement modifiers à la Ruby: puts 'six' if 3 + 3 == 6.
+
+</br>Often we want to branch into more than just one option. In Ruby we would use the elsif keyword. In JavaScript we use else if. An else if branch is written after the initial if and is used to test an additional condition.</li>
+
+
+
+<li>(Yes, you can split up array declarations across multiple lines in JavaScript, so long as the line ends with a comma.)
+
+</br>there are no Array.first() and Array.last() in JavaScript. We just have to use tried-and-true index notation.
+
+<li>JavaScript does not allow negative indexing (array[-1]) of Arrays, but it does provide a length property for all array objects. So, implementing Ruby'sArray#last in JavaScript looks like this:
+
+</br>var numbers = [1,2,3];
+
+</br>numbers[numbers.length - 1];
+
+</br>// => 3
+
+</br>var animals = ["cats"];
+
+</br>animals[animals.length - 1];
+
+</br>// => "cats"
+
+</br>var mixed = [true, "cats", 100];
+
+</br>mixed[mixed.length - 1];
+
+</br>// => 100
+
+</br>Ruby provides a handy Array#empty? boolean method. Not so in JavaScript: you can tell it's a property and not a method because it doesn't take a () at the end. [1,2,3].length() will throw an error.
+
+
+</br>[].length;
+
+</br>// => 0
+
+</br>[1].length;
+
+</br>// => 1
+
+</br>[1,2].length;
+
+</br>// => 2
+
+</br>[1,2,3].length;
+
+</br>// => 3
+
+
+
+</br>[].length === 0;
+
+</br>// => true
+
+</br>["cats"].length === 0;
+
+</br>// => false
+
+</br>[null].length === 0;
+
+</br>// => false
+
+</br>[false].length === 0;
+
+</br>// => false
+
+</br>In Ruby, the boolean method Array#include? takes any object as its input and returns true if that object is in the array and false otherwise. To do this in JavaScript, we use the accessor method indexOf() which takes an object as its input and returns the index of that object in the array, or -1 if the object is not in the array.
+
+</br>[1,2,3].indexOf(1) > -1;
+
+</br>// => true
+
+</br>[1,2,3].indexOf("cats") > -1;
+
+</br>// => false
+
+
+
+</br>var foo = "pants";
+
+</br>[1,2,3,foo].indexOf("pants") > -1;
+
+</br>// => true
+
+
+
+</br>var desserts = ["pie", "cake", "scone"];
+
+</br>desserts.indexOf("steak") > -1;
+
+</br>// => false</li>
+
+
+
+<li>JavaScript has no built in data type to parallel Ruby's Hash, although we can use object literals in JavaScript to achieve a similar functionality.
+
+</br>var person = { firstName: 'Frank', lastName: 'Hardy', age: 25 };
+
+</br>If person were a Ruby hash, we would say that it has the keys firstName, lastName, and age. Since this is a JavaScript object, we refer to them as the properties of that object.
+
+
+
+</br>In Ruby, the keys can be any data type: string, symbol, array, another hash, etc. This is not the case in JavaScript.
+
+</br>The properties of an object are variables, and must conform to the same character requirements as other variables in JavaScript. Properties can still point to any data type value, including functions.</li>
+
+
+
+<li>Ruby provides all sorts of looping methods: each, map, inject, times, and so on. JavaScript, on the other hand, uses two keywords for all looping operations: for and while.
+
+</br>A while loop is the simplest type of looping operation: do something until a condition evaluates to false
+
+</br>A for loop, as mentioned above, is useful for looping with a given number of iterations. Use it when you want to do something x times, such as changing the values in an array or counting the number of vowels in a string.</li>
+
+
+</ul>
+</br>
+</br>
+</div>
+<div id="footer">
+  <div class="social_icon">
+      <a href="#"><img src="imgs/Social_Icon/Twitter1_SocialIcons_x16.png" alt="twitter"/></a>
+      <a href="#"><img src="imgs/Social_Icon/Facebook_SocialIcons_x16.png" alt="facebook" /></a>
+      <a href="#"><img src="imgs/Social_Icon/Github_SocialIcons_x16.png" alt="github" /></a>
+      <a href="#"><img src="imgs/Social_Icon/LinkedIn_SocialIcons_x16.png" alt="linkedIn" /></a>
+      <a href="#"><img src="imgs/Social_Icon/Quora_SocialIcons_x16.png" alt="quora" /></a>
+    </div>
+    <p><span class ="smaller_case">HOMEMADE GHOST INC. | DESIGN | DEV | SAN FRANCISCO, CA</p>
+</div>
+
+
+
+
+
+</body>
+</html>
