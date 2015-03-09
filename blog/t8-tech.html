@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Made Ghost | Web Security</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here_new.css">
+  </head>
+<body>
+
+
+  <div id="masthead">
+    <div class="logo">
+      <a href="#">
+        <img src="imgs/homemadeghost_logo_wide.png" alt="HomeMadeGhostLogo" height="60px" width="345px">
+      </a>
+    </div>
+    <div class="navigation">
+    <a href="../about.html">About</a> <a href="../portfolio.html">Portfolio</a> <a href="../blog.html">Blog</a> <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+
+<div class="post"
+  <h2>Coding From An Empty Cup</h2>
+  <h1>Web Security</h1>
+  <h4>March 8, 2015</h4>
+
+
+    <p><b>Web Security: SQL injection</b><p>
+      <p>"SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution.<a href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">1</a>".This type of security vulnerability exists when the argument passed to a function is weakly typed. A weakly typed argument is when the argument while not closely matching the expected value is still accepted.</p>
+      <p>One example of this is <i>Incorrectly filtered escape characters</i>. When querying a database with SQL statements and the inputs is not filtered for escape characters. The output may return more than the author of the code intended. Most SQL server implementations allow multiple statements to be executed with one call, some SQL APIs such as PHP's do not allow for this specifically for security reasons.
+        <p>SELECT * FROM users WHERE name = '' OR '1'='1';</p>
+        <p>If the above statement were to be used in the authentication of a user name the additional statement 1=1 would return true and grant access.</p>
+        <p>Other statements can be utilized to delete, augment, and/or expose information that was not intended to be made accessible.</p>
+
+
+<p>See:<a href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">www.owasp.org</a></p>
+
+
+
+
+</div>
+<div id="footer">
+  <div class="social_icon">
+      <a href="#"><img src="imgs/Social_Icon/Twitter1_SocialIcons_x16.png" alt="twitter"/></a>
+      <a href="#"><img src="imgs/Social_Icon/Facebook_SocialIcons_x16.png" alt="facebook" /></a>
+      <a href="#"><img src="imgs/Social_Icon/Github_SocialIcons_x16.png" alt="github" /></a>
+      <a href="#"><img src="imgs/Social_Icon/LinkedIn_SocialIcons_x16.png" alt="linkedIn" /></a>
+      <a href="#"><img src="imgs/Social_Icon/Quora_SocialIcons_x16.png" alt="quora" /></a>
+    </div>
+    <p><span class ="smaller_case">HOMEMADE GHOST INC. | DESIGN | DEV | SAN FRANCISCO, CA</p>
+</div>
+
+
+
+
+
+</body>
+</html>
