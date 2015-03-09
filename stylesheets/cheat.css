@@ -1,0 +1,61 @@
+.box {
+    background-color: gray;
+    border: 2px solid black;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+.blue {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius : 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.blue_static {
+    position: static;
+    left: 20px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius : 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.blue_relative {
+    position: relative;
+    left: 20px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius : 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.blue_absolute {
+    position: absolute;
+    left: 20px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius : 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.blue_fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius : 50%;
+    border: 1px solid black;
+    text-align: center;
+}
