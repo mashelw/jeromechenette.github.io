@@ -27,14 +27,26 @@
 
 
     <p><b>Web Security: SQL injection</b><p>
-      <p>"SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution.<a href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">1</a>".This type of security vulnerability exists when the argument passed to a function is weakly typed. A weakly typed argument is when the argument while not closely matching the expected value is still accepted.</p>
-      <p>One example of this is <i>Incorrectly filtered escape characters</i>. When querying a database with SQL statements and the inputs is not filtered for escape characters. The output may return more than the author of the code intended. Most SQL server implementations allow multiple statements to be executed with one call, some SQL APIs such as PHP's do not allow for this specifically for security reasons.
+      <p>Code injection is when a invalid data via a statement or command is passed and executed. This results in unforeseen consequences not intended by the original author / owner of the database.</p>
+      <p>SQL injection are the most popular form of code injection: "SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution<a style= color: black; href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">1</a>".This type of security vulnerability exists when the argument passed to a function is weakly typed. A weakly typed argument is when the argument while not closely matching the expected value is still accepted. SQL is written in C++ which is considered a weakly typed language. </p>
+
+
+      <p>One example of this is <i>Incorrectly filtered escape characters</i>; when querying a database with SQL statements and the inputs are not filtered for escape characters. String literal escape characters are characters that initiate different controls in a program. "If a program is incorrectly filtered it will not reject other characters such as (#, <, >, =, *, etc.)."</p>
+        <p>The output may return more than the author of the code intended. Most SQL server implementations allow multiple statements to be executed with one call, some SQL APIs such as PHP's do not allow for this specifically for security reasons.
         <p>SELECT * FROM users WHERE name = '' OR '1'='1';</p>
-        <p>If the above statement were to be used in the authentication of a user name the additional statement 1=1 would return true and grant access.</p>
+        <p>If the above statement were to be used in the authentication of a user-name the additional statement "1=1" would return true and grant access.</p>
         <p>Other statements can be utilized to delete, augment, and/or expose information that was not intended to be made accessible.</p>
+<p><b>Experiment!</b><p>
+  <p>Search for: "SQL Injection Codes"</p>
+  <p>Find a URL that looks like: http://www.awebsite.com/items.php?id=5</p>
+  <p>Look for the “php?id=5” - or any number</p>
+  <p>Type an invalid string literal escape character after the last character in the URL (#, <, >, =, *, etc.)</p>
+  <p>If the site produces a syntax error message it may be vulnerable to a SQL injection.</p>
+  <p> From this point on you can begin to utilize what is known as SQL Tag Injection - by placing a # after the number and passing in additional arguments you can query the database, delete content, or inject viruses.</p>
 
 
-<p>See:<a href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">www.owasp.org</a></p>
+<p>See:Hack Attack Series: SQL Injection By Collin Donaldson</p>
+<p>See:"https://www.owasp.org/index.php/Top_10_2013-A1-Injection"</a></p>
 
 
 
