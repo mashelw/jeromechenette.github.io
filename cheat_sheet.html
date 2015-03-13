@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coding From An Empty Cup</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#introduction">
+                        Introduction
+                    </a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                
+                <li>
+                   <a class="page-scroll" href="#chefs_in_the_kitchen">Chefs in the Kitchen</a>
+                </li>
+                <li>
+                   <a class="page-scroll" href="#git_github">Version Control, Git, and GitHub</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#html_css">HTML & CSS: A Love Story</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#arrays_hashes">Arrays & Hashes: Relfection</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#personal_thinking_style">My Personal Thinking Style</a>
+                </li>
+                <li>
+                   <a class="page-scroll" href="#enumerable_method">Enumerable Method</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#tech_issues">Tech Issues</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#pairing_giving_feedback">Pairing and Giving Feedback</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#ruby_classes">Ruby Classes</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#OOP_concepts">OOP Concepts</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#stereotype_threat">Stereotype Threat</a>
+                </li>
+                 <li>
+                    <a class="page-scroll" href="#affirmation_stereotype_threat">Affirmation and Stereotype Threat</a>
+                </li>
+                 <li>
+                    <a class="page-scroll" href="#javaScript">JavaScript Vs. Ruby</a>
+                </li>
+                 <li>
+                    <a class="page-scroll" href="#conflict">Conflict</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#websecurity">Web Security: SQL injection</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+
+
+<!--  -->
+
+
+
+                    <div class="col-lg-12">
+                        <section id="introduction">    
+                         <h1>CSS positioning cheat-sheet</h1>
+    <p>
+      In this cheat-sheet we will show an example of each CSS position type with it's code and an it's effects.
+    </p>
+
+    <p>
+      The CSS position property allows us to take html elements out of their default normal flow and move them in ways that we like. There are four types of positiong that can be applied when using the CSS position property, they are: static, relative, abosolute, and fixed.
+    </p>
+
+    <h2>position:static</h2>
+    <p>
+      The position of <b>static</b> is the same as the default normal-flow.
+      So setting <code>position: static</code> has no effect from the defaults.
+    </p>
+    <p>
+      Here is our box with a blue dot without any CSS positioning applied.
+      <script src="https://gist.github.com/hsuttong/2955346667b31fb5578a.js"></script>
+    </p>
+    <div class="box">
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+      <div class ="blue"></div>
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+    </div>
+
+    <p>
+      Here we apply <code>position: static</code>:
+    </p>
+
+      <script src="https://gist.github.com/hsuttong/8c2b39483e37672ec14a.js"></script>
+    <div class="box">
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+      <div class ="blue_static">S</div>
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+      Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+    </div>
+
+
+<h2>position:relative</h2>
+<p>
+  The position of <b>relative</b> allows you to move an html element in relation to its normal-flow.
+  In our example below we move a blue dot 20 pixes to the right of where it would have been in normal-flow.
+</p>
+<script src="https://gist.github.com/hsuttong/cd0f2043eed11d266a19.js"></script>
+
+<div class="box">
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  <div class="blue_relative">R</div>
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+</div>
+
+<h2>position:absolute</h2>
+<p>
+  <b>Absolute</b> positioning moves an html element from its normal-flow.
+  Which you can then move in relation to its containing element.
+  Here we move the blue circle 20 pixes to the right of its containing div element.
+</p>
+<script src="https://gist.github.com/hsuttong/db2d24f66e3e5842fc7b.js"></script>
+
+<div class="box">
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  <div class="blue_absolute">A</div>
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+</div>
+
+<h2>position:fixed</h2>
+<p>
+  <b>Fixed</b> positioning removes an html element from normal-flow and allows you to move it in relation to the browser window.
+  It also prevents the element from moving when the browser window is scrolled. It's stuck to your screen like a bug.
+</p>
+<script src="https://gist.github.com/hsuttong/b15c80712e26341baee3.js"></script>
+
+<div class="box">
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  <div class="blue_fixed">F</div>
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+  Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat Wat
+</div>
+                        </br>
+                        </br>
+                    </div>
+
+<!--  -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
